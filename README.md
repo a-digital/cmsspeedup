@@ -1,8 +1,8 @@
 # CMS Speed Up plugin for Craft CMS
 
-Performs a CMS Speed Up after an update is completed
+Performs a CMS Speed Up after an update is completed.
 
-![Screenshot](resources/screenshots/plugin_logo.png)
+This plugin has been built to follow the recommendations made in https://zacharyflower.com/tutorials/2017/02/27/speed-up-craft-admin.html and also address the issue of what happens after a cms update
 
 ## Installation
 
