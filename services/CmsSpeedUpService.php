@@ -34,6 +34,8 @@ class CmsSpeedUpService extends BaseApplicationComponent
 	    $src = craft()->path->getAppPath()."resources";
 	    $dest = $_SERVER["DOCUMENT_ROOT"]."/".craft()->config->get('cpTrigger')."/resources";
 	    $this->recurseRemove($dest);
+	    if (!is_dir($_SERVER["DOCUMENT_ROOT"]."/".craft()->config->get('cpTrigger'))) {
+		    mkdir($_SERVER["DOCUMENT_ROOT"]."/".craft()->config->get('cpTrigger'));
 	    }
 	    $this->recurseCopy($src, $dest);
 	    return true;
@@ -52,7 +54,18 @@ class CmsSpeedUpService extends BaseApplicationComponent
 	        }
 	    }
 	    closedir($dir);
-	} 
+	}
+    
+    public function removeResources()
+    {
+	    $dest = $_SERVER["DOCUMENT_ROOT"]."/".craft()->config->get('cpTrigger')."/resources";
+	    $this->recurseRemove($dest);
+	    if (is_dir($_SERVER["DOCUMENT_ROOT"]."/".craft()->config->get('cpTrigger'))) {
+		    rmdir($_SERVER["DOCUMENT_ROOT"]."/".craft()->config->get('cpTrigger'));
+	    }
+	    return true;
+    }
+	
 	public function recurseRemove($dir) {
 	    if (is_dir($dir)) {
 			$objects = scandir($dir);

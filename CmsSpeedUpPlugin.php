@@ -180,6 +180,7 @@ class CmsSpeedUpPlugin extends BasePlugin
      */
     public function onAfterInstall()
     {
+	    craft()->cmsSpeedUp->copyResources();
     }
 
     /**
@@ -188,6 +189,7 @@ class CmsSpeedUpPlugin extends BasePlugin
      */
     public function onBeforeUninstall()
     {
+	    craft()->cmsSpeedUp->removeResources();
     }
 
     /**
