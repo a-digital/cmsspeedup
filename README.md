@@ -25,7 +25,7 @@ There are no settings for this plugin, it is just a simple install.
 
 We have however experienced a redirection issue with the cpTrigger on some occasions and had to add the following rule to our .htaccess file under the public directory to resolve this:
 
-RewriteRule ^{cpTrigger}$ https://{domain.com}/{cpTrigger}/login [R=301,L,NC]
+`RewriteRule ^{cpTrigger}$ https://{domain.com}/{cpTrigger}/login [R=301,L,NC]`
 
 If you experience this issue then the change to your .htaccess file should also fix this for you.
 
