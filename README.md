@@ -15,7 +15,7 @@ CMS Speed Up works on Craft 2.4.x, Craft 2.5.x and Craft 2.6.x.
 
 ## CMS Speed Up Overview
 
-This plugin has been built to follow the recommendations made in https://zacharyflower.com/tutorials/2017/02/27/speed-up-craft-admin.html and also address the issue of what happens after the cms is updated.
+This plugin has been built to follow the recommendations made in the [Speeding Up the Craft CMS Admin Dashboard](https://zacharyflower.com/tutorials/2017/02/27/speed-up-craft-admin.html) article by [Zachary Flower](https://github.com/zachflower) and also address the issue of what happens after the cms is updated.
 
 It copies our craft/app/resources folder into public/{{ cpTrigger }}/resources so that requests for these files can find their target without having to be processed by craft.
 
@@ -40,4 +40,4 @@ If you experience redirection issues on the base cp url then there is a fix that
 
 * Initial release
 
-Brought to you by [Matt Shearing](adigital.agency)
+Brought to you by [Matt Shearing](https://adigital.agency)
