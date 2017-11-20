@@ -13,6 +13,9 @@ To install CMS Speed Up, follow these steps:
 
 CMS Speed Up works on Craft 2.4.x, Craft 2.5.x and Craft 2.6.x.
 
+Please note that this plugin won't be upgraded for Craft 3. As [Andrew Welch](https://github.com/nystudio107) says that this functionality will be native:
+> FWIW, this is exactly how Yii2/Craft 3 work. Frontend assets get cached and served via cpresources.
+
 ## CMS Speed Up Overview
 
 This plugin has been built to follow the recommendations made in the [Speeding Up the Craft CMS Admin Dashboard](https://zacharyflower.com/tutorials/2017/02/27/speed-up-craft-admin.html) article by [Zachary Flower](https://github.com/zachflower) and also address the issue of what happens after the cms is updated.
