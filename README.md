@@ -2,6 +2,8 @@
 
 Performs a CMS Speed Up after an update is completed.
 
+<img src="resources/icon.svg" width="250px" alt="Logo" title="Logo">
+
 ## Installation
 
 To install CMS Speed Up, follow these steps:
